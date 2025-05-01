@@ -7,7 +7,7 @@ const Register = () => {
             name: e.target.name.value,
             age: e.target.age.value
         }
-        await axios.post('http://localhost:9000/users', user)
+        await axios.post('https://crud-live-backend-40ig.onrender.com/users', user)
        alert('User Registered Successfully')
 
     }

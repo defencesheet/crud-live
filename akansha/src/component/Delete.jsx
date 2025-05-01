@@ -4,7 +4,7 @@ function Delete() {
     const aa1=async(e)=>{
         e.preventDefault()
         const id=e.target.id.value;
-        await axios.delete(`http://localhost:9000/users/${id}`)
+        await axios.delete(`https://crud-live-backend-40ig.onrender.com/users/${id}`)
         alert("data delete")
     }
   return (

@@ -6,7 +6,7 @@ const View = () => {
         viewdata();
     },[])
     const viewdata = async ()=>{
-        const res=await axios.get('http://localhost:9000/users',users);
+        const res=await axios.get('https://crud-live-backend-40ig.onrender.com/users',users);
         console.log(res);
         setUsers(res.data);
     }
